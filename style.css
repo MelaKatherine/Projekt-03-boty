@@ -58,6 +58,7 @@ a{
     flex-grow: 1;
     background: linear-gradient( #06d7c1, #50cc49);
     color: white;
+    border-radius: 8px 0 0 8px;
    
 }
 .logo{
