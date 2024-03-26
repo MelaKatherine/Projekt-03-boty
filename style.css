@@ -25,6 +25,7 @@ body {
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 
@@ -35,19 +36,29 @@ h1 {
     margin: 0;
     padding: 0;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 .zbozi{
     max-width: 670px;
     margin: 0 auto;
     display: flex;
     min-height: 440px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border-radius:8px;
+  
 }
 .vizual{
     position: relative;
     padding: 0 30px;
     flex-basis: 50%;
     flex-grow: 1;
-    background-image: linear-gradient( #06d7c1, #50cc49);
+    background: linear-gradient( #06d7c1, #50cc49);
     color: white;
+   
 }
 .logo{
     position: absolute;
@@ -83,6 +94,93 @@ h1 {
 }
 
 .detaily{
+    position: relative;
+    padding: 30px;
     flex-basis: 50%;
     flex-grow: 1;
+}
+.nazev{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.produkt{
+    color:#959595;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+}
+.popis{
+    position: relative;
+    padding-bottom: 30px;
+}
+.popis::after{
+    content: "";
+    position: absolute;
+    background: #06d7c1;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px; 
+}
+.parametr{
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.velikosti{
+ display: flex;
+ width: 90%;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+
+/*.vybrana{
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color:#f15f42;
+    border-radius: 50%;
+    border: 1px solid #f15f42;
+    width: 30px;
+    height: 30px;
+}*/
+.velikosti li{
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 2em;
+    height: 2em; 
+    transition: all 0.8s;
+}
+.velikosti li:hover{
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+    color:#f15f42;
+    border-radius: 50%;
+    border: 1px solid #f15f42;
+    width: 2em;
+    height: 2em; 
+    cursor: pointer;
+}
+.akce{
+    position: absolute;
+    bottom: 30px;
+}
+.tlacitko{
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #f15f42;
+    text-transform: uppercase;
+    color: white;
+    border-radius:8px;
+    transition: all 0.8s;
+}
+.tlacitko:hover{
+    background-color:#06d7c1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
